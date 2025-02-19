@@ -36,6 +36,7 @@ namespace v8tis
         //    }
         //}
 
+        //*****************************************************************************************************************************************
 
         //Övning 2
         //public void Run()
@@ -52,7 +53,29 @@ namespace v8tis
         //        Console.WriteLine();
         //    }
         //}
+        //*****************************************************************************************************************************************
 
+        //Övning 3
+        //public void Run()
+        //{
+        //    CreateStudent();
+        //    var groups = students.GroupBy(s => s.ClassYear)
+        //        .OrderBy(g => g.Key)
+        //.Select(g => g.OrderBy(g => g.Age)
+        //        .ThenBy(g => g.Firstname));
+
+        //    foreach (var group in groups)
+        //    {
+        //        Console.WriteLine($"Klass {group.First().ClassYear}:");
+
+        //        foreach (var student in group)
+        //        {
+        //            Console.WriteLine($"  Namn: {student.Firstname} {student.Lastname}, {student.Age} år.");
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //}  
+        //*****************************************************************************************************************************************
 
         //Övning 4
         //public void Run()
@@ -78,6 +101,7 @@ namespace v8tis
         //          Console.WriteLine($"{person.Firstname} {person.Lastname}, {person.Age} år.");
         //      }
         //  }
+        //*****************************************************************************************************************************************
 
         //Övning 5
         //public void Run()
@@ -96,30 +120,7 @@ namespace v8tis
 
         //        }
         //    }
-
-
-        //Övning 3
-        //public void Run()
-        //{
-        //    CreateStudent();
-        //    var groups = students.GroupBy(s => s.ClassYear)
-        //        .OrderBy(g => g.Key)
-        //        .Select(g => g.OrderBy(g => g.Age)
-        //        .ThenBy(g => g.Firstname));
-
-        //    foreach (var group in groups)
-        //    {
-        //        Console.WriteLine($"Klass {group.First().ClassYear}:");
-
-        //        foreach (var student in group)
-        //        {
-        //            Console.WriteLine($"  Namn: {student.Firstname} {student.Lastname}, {student.Age} år.");
-        //        }
-        //        Console.WriteLine();
-        //    }
-        //}        
-
-
+        //*****************************************************************************************************************************************
         public void CreateStudent() 
         {
             students.Add(new Student("Maja", "Sigge", 33, "net25"));
